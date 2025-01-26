@@ -9,7 +9,7 @@ def main(args):
     model = BlipForConditionalGeneration.from_pretrained(args.model_path)
     processor = BlipProcessor.from_pretrained(args.model_path)
     
-    dataset = load_dataset('json', data_files='dataset.json', split='train')
+    dataset = load_dataset('json', data_files=args.dataset_path, split='train')
     train_dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)
     
     optimizer = AdamW(model.parameters(), lr=args.lr)
@@ -49,6 +49,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_path',type=str,default="Salesforce/blip-image-captioning-base",
                         help="path to the model you want to train")
+    parser.add_argument('--dataset_path',type=str,default="../dataset/dataset.json",
+                        help="path tho the dataset json file")
     parser.add_argument('--lr',type=float,default=2e-5,
                         help="learning rate")
     parser.add_argument('--batch_size',type=int,default=8,
