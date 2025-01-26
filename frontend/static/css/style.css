@@ -1,0 +1,216 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    opacity: 0.8;
+}
+
+form {
+    margin-bottom: 20px;
+}
+label {
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color:  #2c3e50;
+    cursor: pointer;
+    border-radius:10px;
+    transition: .3s;
+}
+
+label:hover {
+    opacity: 0.8;
+}
+
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#uploadForm label {
+    font-size: 2rem; /* 文字を大きく */
+    margin-bottom: 20px; /* ボタンとの間隔を空ける */
+    font-weight: bold;
+}
+
+#uploadForm button {
+    font-size: 1.5rem; /* ボタンのフォントサイズ */
+    padding: 15px 30px;
+    background-color: #993333; /* 緑色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#uploadForm button:hover {
+    opacity: 0.8; /* ホバー時の色 */
+}
+
+#imageLabel {
+    padding: 10px;
+    background-color: #993333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#imageLabel:hover {
+    opacity: 0.8;
+}
+input[type="file"] {
+    display: none;
+}
+
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+h1.app_name{
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+}
+label {
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color:  #2c3e50;;
+    cursor: pointer;
+    border-radius:10px;
+    transition: .3s;
+}
+
+label:hover {
+    opacity: 0.8;
+}
+
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#uploadForm label {
+    font-size: 2rem; /* 文字を大きく */
+    margin-bottom: 20px; /* ボタンとの間隔を空ける */
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#result {
+    display: flex;
+    align-items: stretch; /* 高さを揃える */
+    justify-content: center; /* コンテンツ全体を中央揃え */
+    gap: 100px; /* コンテナ間のスペースを拡大 */
+    padding: 20px; /* パディングを調整 */
+    height: 500px;
+}
+
+#result_img_container{
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 内容を上部に配置 */
+    align-items: center; /* コンテンツを中央揃え */
+    gap: 20px; /* 追加要素間のスペースを確保 */
+    border: 2px,solid,#2c3e50;
+}
+
+#result_text_container{
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 内容を上部に配置 */
+    align-items: center; /* コンテンツを中央揃え */
+    gap: 20px; /* 追加要素間のスペースを確保 */
+    border: 2px,solid,#993333;
+}
+
+#result_img_container h2 {
+    position: relative; /* 相対位置指定 */
+    z-index: 1; /* 画像より前面に表示 */
+    padding: 5px 10px; /* 背景と文字の間隔を確保 */
+}
+
+#result_text_container h2 {
+    margin-bottom: 20px; /* タイトルとテキストの間隔を広げる */
+}
+
+#result_img_container img {
+    max-width: 100%; /* 画像が親要素に収まるように */
+    height: auto; /* アスペクト比を維持 */
+    z-index: 0; /* 画像を後ろに配置 */
+}
+
+#review{
+    font-size: 25px;
+    color: #993333;
+}
