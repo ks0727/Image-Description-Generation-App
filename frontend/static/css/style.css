@@ -152,8 +152,8 @@ label:hover {
 }
 
 #uploadForm label {
-    font-size: 2rem; /* 文字を大きく */
-    margin-bottom: 20px; /* ボタンとの間隔を空ける */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
     font-weight: bold;
 }
 
@@ -163,10 +163,10 @@ input[type="file"] {
 
 #result {
     display: flex;
-    align-items: stretch; /* 高さを揃える */
-    justify-content: center; /* コンテンツ全体を中央揃え */
-    gap: 100px; /* コンテナ間のスペースを拡大 */
-    padding: 20px; /* パディングを調整 */
+    align-items: stretch;
+    justify-content: center;
+    gap: 100px; 
+    padding: 20px;
     height: 500px;
 }
 
@@ -176,9 +176,9 @@ input[type="file"] {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 内容を上部に配置 */
-    align-items: center; /* コンテンツを中央揃え */
-    gap: 20px; /* 追加要素間のスペースを確保 */
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 20px; 
     border: 2px,solid,#2c3e50;
 }
 
@@ -188,26 +188,26 @@ input[type="file"] {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 内容を上部に配置 */
-    align-items: center; /* コンテンツを中央揃え */
-    gap: 20px; /* 追加要素間のスペースを確保 */
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 20px; 
     border: 2px,solid,#993333;
 }
 
 #result_img_container h2 {
-    position: relative; /* 相対位置指定 */
-    z-index: 1; /* 画像より前面に表示 */
-    padding: 5px 10px; /* 背景と文字の間隔を確保 */
+    position: relative;
+    z-index: 1; 
+    padding: 5px 10px; 
 }
 
 #result_text_container h2 {
-    margin-bottom: 20px; /* タイトルとテキストの間隔を広げる */
+    margin-bottom: 20px; 
 }
 
 #result_img_container img {
-    max-width: 100%; /* 画像が親要素に収まるように */
-    height: auto; /* アスペクト比を維持 */
-    z-index: 0; /* 画像を後ろに配置 */
+    max-width: 100%; 
+    height: auto; 
+    z-index: 0; 
 }
 
 #review{
